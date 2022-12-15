@@ -1,0 +1,14 @@
+FIRST UPDATE ALL THE PACKAGES 
+
+Switch to root user 	sudo su -
+yum update -y
+add third party repository named EPEL 
+sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
+
+now install ansible 
+
+yum install ansible
+
+to check the version
+
+ansible --version
