@@ -1,0 +1,18 @@
+Docker installation on Amazon linux machine
+switch to root user
+  sudo su -
+first update the machine
+  yum update -y
+
+install docker using amazon-linux-extras package
+    amazon-linux-extras install docker
+    
+    
+to enable docker
+    systemctl enable docker
+to check the status of docker
+  systemctl status docker
+  
+to start the docker service
+
+    systemctl start docker
