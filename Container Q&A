@@ -1,0 +1,58 @@
+1.what is container?
+ANS. Container is an isolated environment for deploying applications along with application code,runtime and other dependencies like libraries and packages
+
+2.What is container engine?
+ANS. Container engine is the main component in contaienr world.
+	it manages the resources of the host operating system and helps in managing containers like creating,starting,stopping and deleting of contaienrs.
+
+3.How the container engine will run containers?
+ANS. The container engine communicates with the host operating system to allocate resources, such as memory and CPU, for each container
+     The container engine pulls a container image from a registry,and creates a new container from the image.
+     The container engine launches the container and starts its process
+     The container engine provides a communication channel between the containers and the host operating system, allowing the containers to access resources and services from the host.
+
+
+4.What is image?
+ANS.executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and system tools
+
+
+5.what is network?
+ANS. network is gorup of two or more devices connected together to share resources.
+
+6.Why we need network?
+ANS. Network is the essential component while devices communicating with each other and it also provides security
+
+7.what is pvm?
+ANS. PVM stands for Python Virtual machine, it the component of python software and it is responsible for executing python code 
+     and it consits of so many libraries which helps in executing the code.
+
+8.which python flavour you are using?
+ANS..Cpython 
+    to know which flavour you are using
+
+import sys
+print(sys.implementation.name)
+
+9.How the containers can communicate with other?
+
+ANS. whenever we run containers , these will be added into the default bridge network so that all the containers can communicate with other
+    but if u want to restrict one container from communicating with other containers
+  we can a create a user defined network and we can add whatever the containers we want into that network
+
+ to create a own network using docker engine
+
+ docker network create <network_name>
+
+to add a particular container into that network, use --net=<network_name> while running the container.
+
+10.What are namespace and cgroups?
+ANS. Namespaces provide a mechanism for creating isolated environments,Each namespace provides a separate view of system resources, such as network interfaces, process IDs, and file systems
+     This isolation helps to ensure that containers do not interfere with each other or with the host operating system
+
+Cgroups: cgroups provides control over system resources such as CPU, memory, and I/O bandwidth. Container engines use cgroups to limit and control the resources available to containers
+         Together, namespaces and control groups provide the foundation for the isolation and resource management features of container engines, allowing multiple containers to run on a single host while ensuring that they are isolated and have access only to the resources they are allocated.
+
+
+11.What is virtualization?
+ANS. Virtualization is the creation of a virtual version of something, such as a virtual computer, operating system, storage device, or network resources
+	The main goal of virtualization is to allow multiple virtual resources to share the same physical resources,
