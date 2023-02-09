@@ -56,3 +56,43 @@ Cgroups: cgroups provides control over system resources such as CPU, memory, and
 11.What is virtualization?
 ANS. Virtualization is the creation of a virtual version of something, such as a virtual computer, operating system, storage device, or network resources
 	The main goal of virtualization is to allow multiple virtual resources to share the same physical resources,
+	
+12.What is subnet?
+ANS. subnet is a small network with in a large network and are useful for controlling network traffic
+	Each subnet has its own unique IP address range and is identified by a subnet mask
+
+
+13.What is Gateway?
+
+ANS. Gateway acts as a entry and exit point for network traffic
+   The gateway is responsible for routing traffic between the network and the Internet
+	The gateway acts as a bridge between different networks, and it allows traffic to flow between them
+
+
+For example, if you create a Docker network with a subnet of 192.168.0.0/16 and a gateway of 192.168.0.1, 
+this means that IP addresses in the range of 192.168.0.0 to 192.168.255.255 are available for assignment to containers within the network, 
+and the gateway at IP address 192.168.0.1 is the default route for network traffic.
+ 
+
+14. What is subnet mask?
+A subnet mask is a 32-bit number used to divide an IP address into two parts
+ 1.Network address
+2.host address
+
+The subnet mask is used to define the size of a subnet and to determine which portion of an IP address belongs to the network address 
+	and which portion belongs to the host address.
+
+15.what is CIDR notation?
+
+ANS. CIDR- Classless-inter-Domain-Route  notation is a compact representation of an IP address and its associated network mask. 
+It is used to represent the size of a subnet in terms of the number of bits that are used to represent the network portion of an IP address.
+
+
+
+16. What is 32-bit and 64-bit systems?
+ANS. These terms refers to describe architecture of CPU, and it refers to the size of the memory addresses it can generate. 
+  32 bit syste can address only 32 bit addresses,This means that a 32-bit CPU can access a maximum of 4GB of memory.
+
+A 64-bit CPU, on the other hand, can handle data values and memory addresses that are represented by 64 bits. 
+This means that a 64-bit CPU can access a much larger amount of memory, typically in the range of several terabytes.
+
