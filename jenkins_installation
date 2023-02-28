@@ -1,0 +1,31 @@
+Jenkins installation on Amazon linux
+
+update the system
+  yum update -y
+  
+Add jenkins repo
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo \https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+import key file from jenkins CI
+
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
+update the system again
+yum update -y
+
+now install java from amazon-linux-extras
+
+sudo amazon-linux-extras install java-openjdk11 -y
+
+Install jenkins
+
+sudo yum install jenkins -y
+
+enable jenkins service to start as boot
+
+sudo systemctl enable jenkins
+
+start jenkins
+
+systemctl start jenkins
