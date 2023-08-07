@@ -16,3 +16,12 @@ to check the status of docker
 to start the docker service
 
     systemctl start docker
+
+
+terraform installtion on ubuntu 20.04
+
+tflint installtion
+step-1 :  wget https://github.com/terraform-linters/tflint/releases/download/v0.47.0/tflint_linux_amd64.zip
+step-2:  unzip tflint_linux_amd64.zip
+step-3: mv tflint tflint_linux_amd64.zip /usr/local/bin
+step-4: tflint --init
